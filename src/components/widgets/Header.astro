@@ -1,0 +1,20 @@
+---
+import { Image } from "astro:assets";
+import { getCollection } from "astro:content";
+
+import Button from "../common/Button.astro";
+
+import logo from "../../assets/identity/logo.webp";
+
+const menu = await getCollection("menu");
+---
+
+<header class="fixed top-0 z-[1001] w-full transition-transform duration-300">
+  <div class="flex items-center justify-between px-4 py-2 lg:px-8 lg:py-4">
+    <Image src={logo} alt="kanzo.tech logo" class="w-28" />
+    <nav class="flex items-center gap-3">
+      {menu.map((item: any) => <a href={item.data.href}>{item.id}</a>)}
+    </nav>
+    <Button href="/contact" text="Contact us" class="py-2 px-5 text-sm" />
+  </div>
+</header>

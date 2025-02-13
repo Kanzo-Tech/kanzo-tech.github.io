@@ -1,0 +1,13 @@
+---
+const { href, text } = Astro.props;
+---
+
+<a
+  href={href}
+  class:list={[
+    "bg-black  hover:bg-gray-800  text-white  rounded",
+    Astro.props.class,
+  ]}
+>
+  {text}
+</a>

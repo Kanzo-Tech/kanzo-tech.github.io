@@ -1,0 +1,10 @@
+---
+import Section from "../common/Section.astro";
+import BentoItem from "./BentoItem.astro";
+
+const { list } = Astro.props;
+---
+
+<Section class="max-w-7xl grid grid-cols-1 md:grid-cols-3 gap-4">
+  {list.map((article) => <BentoItem article={article} />)}
+</Section>

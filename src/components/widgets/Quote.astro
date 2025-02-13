@@ -1,0 +1,10 @@
+---
+import Section from "../common/Section.astro";
+
+const { title, subtitle } = Astro.props;
+---
+
+<Section class="flex flex-col max-w-4xl gap-10">
+  <h3 class="text-center text-6xl">{title}</h3>
+  <p class="text-center text-2xl">{subtitle}</p>
+</Section>

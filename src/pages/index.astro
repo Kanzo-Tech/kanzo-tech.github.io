@@ -1,11 +1,25 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import { getCollection, getEntry } from "astro:content";
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/HomeLayout.astro";
+import Quote from "../components/widgets/Quote.astro";
+import BentoGrid from "../components/widgets/BentoGrid.astro";
+import Collaborations from "../components/widgets/Collaborations.astro";
+import Hero from "../components/widgets/Hero.astro";
+import List from "../components/widgets/List.astro";
+
+const solutions = await getCollection("solutions");
+const advantages = await getCollection("advantages");
+const collaborations = await getCollection("collaborations");
+
+const heroSection = await getEntry("sections", "hero");
+const ctaSection = await getEntry("sections", "cta");
 ---
 
 <Layout>
-	<Welcome />
+  <Hero title={heroSection?.data.title} subtitle={heroSection?.data.subtitle} />
+  <Quote title={ctaSection?.data.title} subtitle={ctaSection?.data.subtitle} />
+  <BentoGrid list={solutions} />
+  <List list={advantages} />
+  <Collaborations collaborations={collaborations} />
 </Layout>

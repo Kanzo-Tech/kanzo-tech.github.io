@@ -1,0 +1,36 @@
+---
+import { Image } from "astro:assets";
+import Card from "../common/Card.astro";
+
+const { article } = Astro.props;
+---
+
+<Card class="group bg-gray-100 cursor-pointer">
+  <Image
+    src={article.data.image}
+    alt={article.data.id}
+    class="h-80 w-full object-cover"
+  />
+
+  <div class="grid grid-rows-2 gap-4 p-6">
+    <h3
+      class:list={[
+        "text-3xl font-bold text-gray-800",
+        "transform group-hover:translate-y-[-10px]",
+        "transition-all duration-300 ease-out",
+      ]}
+    >
+      {article.data.id}
+    </h3>
+    <p
+      class:list={[
+        "text-lg text-gray-600",
+        "opacity-0 group-hover:opacity-100",
+        "transform group-hover:scale-105",
+        "transition-all duration-300 ease-out",
+      ]}
+    >
+      {article.data.text}
+    </p>
+  </div>
+</Card>

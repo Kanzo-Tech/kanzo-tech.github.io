@@ -1,0 +1,47 @@
+---
+import { getEntry } from "astro:content";
+import { Image } from "astro:assets";
+
+import Layout from "../layouts/HomeLayout.astro";
+import Slide from "../components/widgets/Slide.astro";
+import Banner from "../components/common/Banner.astro";
+import Section from "../components/common/Section.astro";
+import Card from "../components/common/Card.astro";
+
+import hero from "../assets/images/hero.avif";
+
+const knowledgeGraphs = await getEntry("about", "knowledge-graphs");
+const dataSpaces = await getEntry("about", "data-spaces");
+const dataAi = await getEntry("about", "data-ai");
+
+const sections = [knowledgeGraphs, dataSpaces, dataAi];
+
+const about = await getEntry("sections", "about");
+const catchphrase = await getEntry("sections", "catchphrase");
+const discover = await getEntry("sections", "discover");
+---
+
+<Layout>
+  <Banner title={about?.data.title} subtitle={about?.data.subtitle} />
+
+  <Section class="grid grid-cols-1 md:grid-cols-2 gap-3 max-w-7xl">
+    <Card class="col-span-2 py-20 bg-gray-800">
+      <p class="text-white text-3xl">{catchphrase?.data.title}</p>
+    </Card>
+
+    <Card>
+      <Image src={hero} alt="hero" class="w-full h-full object-cover rounded" />
+    </Card>
+
+    <Card class="bg-gray-300 p-10 gap-3">
+      <p>
+        {discover?.data.title}
+      </p>
+      <p>
+        {discover?.data.subtitle}
+      </p>
+    </Card>
+  </Section>
+
+  {sections.map((card, index) => <Slide index={index} item={card} />)}
+</Layout>

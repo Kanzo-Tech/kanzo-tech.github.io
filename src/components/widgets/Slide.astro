@@ -1,0 +1,33 @@
+---
+import { Image } from "astro:assets";
+
+import Section from "../common/Section.astro";
+
+const { index, item } = Astro.props;
+---
+
+<Section class="max-w-7xl">
+  <h2 class="text-4xl">{item.data.title}</h2>
+  <p class="text-lg my-4">{item.data.subtitle}</p>
+
+  <div class="grid grid-cols-2 gap-6">
+    <div class={index % 2 === 0 ? "order-first" : "order-last"}>
+      <Image
+        src={item.data.image}
+        alt={item.data.id}
+        class="w-full h-full object-cover rounded"
+      />
+    </div>
+
+    <ul class="grid items-stretch gap-4">
+      {
+        item.data.features.map((feature) => (
+          <li class=" w-full h-full flex flex-col justify-center px-4 rounded bg-gray-100 group cursor-pointer">
+            <h3 class="text-lg">{feature.id}</h3>
+            <p class="hidden group-hover:block ">{feature.text}</p>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</Section>

@@ -1,0 +1,26 @@
+[
+    {
+        "id": "secartys",
+        "image": "../assets/images/secartys.png"
+    },
+    {
+        "id": "fiware",
+        "image": "../assets/images/FIWARE.jpg"
+    },
+    {
+        "id": "gaia-x",
+        "image": "../assets/images/gaia-x.jpg"
+    },
+    {
+        "id": "CanariasExcelenciaTecnologica",
+        "image": "../assets/images/CanariasExcelenciaTecnologica.webp"
+    },
+    {
+        "id": "IDSA",
+        "image": "../assets/images/IDSA.jpg"
+    },
+    {
+        "id": "smartcitycluster",
+        "image": "../assets/images/smartcitycluster.png"
+    }
+]

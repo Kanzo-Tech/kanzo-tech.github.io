@@ -1,0 +1,70 @@
+[
+    {
+        "id": "knowledge-graphs",
+        "title": "Knowledge Graphs Engineering",
+        "subtitle": "In today's data-driven world, organizations need to access and understand data from a variety of sources, which can often be complex and fragmented. Our Knowledge Graphs Engineering service simplifies this by structuring diverse data sources into clear, actionable insights.",
+        "features": [
+            {
+                "id": "Semantic Technologies", 
+                "text": "We utilize advanced semantic web standards to enable interoperability and scalability in your data architecture"
+            },
+            {
+                "id": "Ontology Development", 
+                "text": "Our team designs and develops domain-specific ontologies and vocabularies that organize your data into a meaningful framework"
+            },
+            {
+                "id": "Knowledge Graph Creation", 
+                "text": "We build and populate Knowledge Graphs that streamline data access, enhance queries, and improve AI reasoning"
+            },
+            {
+                "id": "Enhancing AI",
+                "text": "By integrating semantic reasoning into your AI models, we enhance their performance and explainability"
+            }
+        ],
+        "image": "../assets/images/hero.avif"
+    },
+    {
+        "id": "data-spaces",
+        "title": "Knowledge Graphs Engineering",
+        "subtitle": "As data becomes the lifeblood of business innovation, organizations are looking for new ways to share and manage data securely. Data Spaces provide a decentralized framework for seamless data sharing, enabling more collaborative and effective decision-making.",
+        "features": [
+            {
+                "id": "Self-Sovereign Identity & Data Sovereignty", 
+                "text": "We help organizations implement Self-Sovereign Identity (VC/DID) solutions and Solid-based standards to ensure secure and independent data control"
+            },
+            {
+                "id": "Interoperable Data Connector", 
+                "text": "Our solutions include multi-tenant and interoperability connector using leading platforms like FIWARE, ECLIPSE, and IDSA, enabling easy data exchange between systems"
+            },
+            {
+                "id": "Governance & Vocabulary Creation", 
+                "text": "We enrich your data governance and create custom vocabularies using semantic technologies to ensure consistency and reliability across shared data environments"
+            }
+        ],
+        "image": "../assets/images/hero.avif"
+    },
+    {
+        "id": "data-ai",
+        "title": "Data & AI models performance optimization",
+        "subtitle": "For AI to truly transform your business, it must operate at peak performance while remaining sustainable. At Kanzo, we specialize in optimizing your AI infrastructure to deliver faster, more accurate results while minimizing resource consumption.",
+        "features": [
+            {
+                "id": "AI Model Optimization", 
+                "text": "We improve the performance of your AI models, ensuring they align with business goals"
+            },
+            {
+                "id": "Low-Latency Processing", 
+                "text": "Our solutions offer low-latency processing for high-demand Edge-IoT environments, ensuring that AI can function in real time"
+            },
+            {
+                "id": "Energy-Efficient Algorithms", 
+                "text": "We reduce your AI infrastructure’s environmental footprint by implementing energy-efficient scheduling algorithms for data centers and on-premises infrastructures"
+            },
+            {
+                "id": "NLP & Multi-Agent Systems",
+                "text": "We design domain-specific conversational agents and NLP systems that streamline communication and decision-making processes"
+            }
+        ],
+        "image": "../assets/images/hero.avif"
+    }
+]

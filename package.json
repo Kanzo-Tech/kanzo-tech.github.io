@@ -1,5 +1,5 @@
 {
-  "name": "kanzo-tech",
+  "name": "kanzo.tech",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -9,6 +9,11 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.2.5"
+    "@astrojs/tailwind": "^6.0.0",
+    "@fontsource/comic-neue": "^5.1.1",
+    "@fontsource/roboto": "^5.1.1",
+    "@iconify-json/ph": "^1.2.0",
+    "astro": "^5.2.6",
+    "astro-icon": "^1.1.5"
   }
 }

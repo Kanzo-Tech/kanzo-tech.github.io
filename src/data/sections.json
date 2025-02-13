@@ -1,0 +1,31 @@
+[
+    {
+        "id": "hero",
+        "title": "Create digital worlds, let your communities thrive",
+        "subtitle": "By combining Hybrid AI with Knowledge Graphs, we offer solutions that transform how businesses understand and use their data"
+    },
+    {
+        "id": "cta",
+        "title": "Join us in shaping the future of business intelligence",
+        "subtitle": "With our solutions driven by Knowledge Graphs, organizations gain the clarity and insight they need to stay ahead, by leveraging artificial intelligence systems that are powerful, accountable, and aligned with the realities of their data"
+    },
+    {
+        "id": "collaborations",
+        "title": "We collaborate with R&D organizations and networks in Europe"
+    },
+    {
+        "id": "catchphrase",
+        "title": "Let's Build the Future Together!",
+        "subtitle": "Discover how Kanzo can help you turn your data into a powerful engine for innovation and growth. Whether you're looking to enhance your data infrastructure, optimize AI models, or explore decentralized data sharing, we have the solutions that will transform your business."
+    },
+    {
+        "id": "about",
+        "title": "About us",
+        "subtitle": "We are a team of experts dedicated to creating innovative solutions that empower organizations to unlock their full potential."
+    },
+    {
+        "id": "discover",
+        "title": "Discover how Kanzo can help you turn your data into a powerful engine for innovation and growth. Whether you're looking to enhance your data infrastructure, optimize AI models, or explore decentralized data sharing, we have the solutions that will transform your business.",
+        "subtitle": "At Kanzo, we offer a suite of services designed to unlock the full potential of your data. Through our expertise in Knowledge Graphs, Data Spaces, and AI performance optimization, we help organizations transform data into a powerful driver of informed decision-making, operational efficiency, and ethical AI practices."
+    }
+  ]

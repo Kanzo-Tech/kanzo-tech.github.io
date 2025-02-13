@@ -1,0 +1,17 @@
+[
+    {
+        "id": "Knowledge Graphs",
+        "text": "Unlocking the Power of Structured Data for Smarter Decision-Making",
+        "image": "../assets/images/knowledge-graphs-engineering.webp"
+    },
+    {
+        "id": "Data Spaces",
+        "text": "Empowering Secure and Decentralized Data Sharing Across Organizations",
+        "image": "../assets/images/data-spaces.webp"
+    },
+    {
+        "id": "Data & AI models",
+        "text": "Maximizing AI Efficiency and Reducing Environmental Impact",
+        "image": "../assets/images/performance.webp"
+    }
+]

@@ -1,0 +1,27 @@
+---
+import { Image } from "astro:assets";
+
+import PrimaryButton from "./PrimaryButton.astro";
+
+import background from "../../assets/images/hero.avif";
+
+const { title, subtitle } = Astro.props;
+---
+
+<section class="relative h-[75vh] xl:h-screen">
+  <div class="absolute inset-0">
+    <Image
+      src={background}
+      alt="Mountains background"
+      class="w-full h-full object-cover"
+    />
+  </div>
+
+  <div class="absolute max-w-2xl bottom-0 left-0 p-20 xl:pl-48 xl:pb-48">
+    <div class="flex flex-col items-start gap-6 text-white">
+      <h1 class="text-7xl font-bold">{title}</h1>
+      <p class="text-xl mb-4">{subtitle}</p>
+      <PrimaryButton href="/contact" text="Contact us" />
+    </div>
+  </div>
+</section>

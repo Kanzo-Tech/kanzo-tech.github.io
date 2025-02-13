@@ -1,0 +1,12 @@
+---
+import Section from "../common/Section.astro";
+import ListItem from "./ListItem.astro";
+
+const { list } = Astro.props;
+---
+
+<Section>
+  <ul class="flex flex-col gap-32 max-w-7xl mx-auto">
+    {list.map((item, index) => <ListItem index={index} item={item} />)}
+  </ul>
+</Section>

@@ -1,0 +1,19 @@
+---
+import { Image } from "astro:assets";
+
+import Section from "../common/Section.astro";
+
+const { collaborations } = Astro.props;
+---
+
+<Section>
+  <ul class="flex justify-between items-center gap-4">
+    {
+      collaborations.map((collaboration) => (
+        <li class="w-28">
+          <Image src={collaboration.data.image} alt={collaboration.data.id} />
+        </li>
+      ))
+    }
+  </ul>
+</Section>
