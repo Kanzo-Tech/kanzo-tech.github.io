@@ -19,14 +19,17 @@ const { index, item } = Astro.props;
       />
     </div>
 
-    <ul class="grid items-stretch gap-4">
+    <ul class="grid gap-4">
       {
-        item.data.features.map((feature) => (
-          <li class=" flex flex-col justify-center p-4 gap-2 rounded bg-gray-200 group cursor-pointer">
-            <h3 class="text-md md:text-xl">{feature.id}</h3>
-            <p class="text-sm md:text-base hidden group-hover:block ">
-              {feature.text}
-            </p>
+        item.data.features.map((feature, i) => (
+          <li
+            id="feature-item"
+            class="flex flex-col justify-center p-4 gap-2 rounded bg-gray-100 cursor-pointer transition-all duration-200 hover:bg-gray-300"
+            tabindex="0"
+            data-index={i}
+          >
+            <h3 class="text-lg md:text-xl font-medium">{feature.id}</h3>
+            <p class="text-sm md:text-base hidden">{feature.text}</p>
           </li>
         ))
       }

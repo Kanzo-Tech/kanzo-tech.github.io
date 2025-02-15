@@ -1,4 +1,14 @@
 <script is:inline>
+  // Feature item click
+  document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll("#feature-item").forEach((item) => {
+      item.addEventListener("click", () => {
+        const text = item.querySelector("p");
+        text?.classList.toggle("hidden");
+      });
+    });
+  });
+
   // Hide header on scroll
   function hideHeaderOnScroll() {
     if (typeof window === "undefined") return;
@@ -27,5 +37,6 @@
       }
     });
   }
+
   hideHeaderOnScroll();
 </script>
