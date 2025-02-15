@@ -8,7 +8,7 @@ const { catchphrase, image, paragraphs } = Astro.props;
 ---
 
 <Section class="grid grid-cols-1 md:grid-cols-2 gap-3 max-w-7xl">
-  <Card class="md:col-span-2 py-20 bg-gray-800 text-center">
+  <Card class="md:col-span-2 py-20 bg-black text-center">
     <p class="text-white text-3xl">{catchphrase?.data.title}</p>
   </Card>
 
@@ -20,7 +20,7 @@ const { catchphrase, image, paragraphs } = Astro.props;
     />
   </Card>
 
-  <Card class="bg-gray-300 p-10 gap-3">
+  <Card class="bg-gray-200 p-10 gap-3">
     {paragraphs.map((paragraph) => <p class="text-lg">{paragraph}</p>)}
   </Card>
 </Section>

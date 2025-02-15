@@ -22,7 +22,7 @@ const { index, item } = Astro.props;
     <ul class="grid items-stretch gap-4">
       {
         item.data.features.map((feature) => (
-          <li class=" flex flex-col justify-center p-4 gap-2 rounded bg-gray-100 group cursor-pointer">
+          <li class=" flex flex-col justify-center p-4 gap-2 rounded bg-gray-200 group cursor-pointer">
             <h3 class="text-md md:text-xl">{feature.id}</h3>
             <p class="text-sm md:text-base hidden group-hover:block ">
               {feature.text}
