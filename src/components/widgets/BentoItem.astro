@@ -12,10 +12,10 @@ const { article } = Astro.props;
     class="h-80 w-full object-cover"
   />
 
-  <div class="grid grid-rows-2 gap-4 p-6">
+  <div class="flex flex-col p-6">
     <h3
       class:list={[
-        "text-3xl font-bold text-gray-800",
+        "text-3xl font-bold",
         "transform group-hover:translate-y-[-10px]",
         "transition-all duration-300 ease-out",
       ]}
@@ -24,9 +24,8 @@ const { article } = Astro.props;
     </h3>
     <p
       class:list={[
-        "text-lg text-gray-600",
+        "text-lg",
         "opacity-0 group-hover:opacity-100",
-        "transform group-hover:scale-105",
         "transition-all duration-300 ease-out",
       ]}
     >
