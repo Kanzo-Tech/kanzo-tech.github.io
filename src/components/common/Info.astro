@@ -1,0 +1,26 @@
+---
+import { Image } from "astro:assets";
+
+import Section from "./Section.astro";
+import Card from "./Card.astro";
+
+const { catchphrase, image, paragraphs } = Astro.props;
+---
+
+<Section class="grid grid-cols-1 md:grid-cols-2 gap-3 max-w-7xl">
+  <Card class="md:col-span-2 py-20 bg-gray-800 text-center">
+    <p class="text-white text-3xl">{catchphrase?.data.title}</p>
+  </Card>
+
+  <Card>
+    <Image
+      src={image}
+      alt={catchphrase?.data.title}
+      class="w-full h-full object-cover rounded"
+    />
+  </Card>
+
+  <Card class="bg-gray-300 p-10 gap-3">
+    {paragraphs.map((paragraph) => <p class="text-lg">{paragraph}</p>)}
+  </Card>
+</Section>
