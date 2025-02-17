@@ -7,9 +7,9 @@ const { index, item } = Astro.props;
 
 <li
   id={Astro.props.id}
-  class:list={["grid md:grid-cols-2 items-center gap-6", Astro.props.class]}
+  class:list={["grid md:grid-cols-2 items-center  gap-6", Astro.props.class]}
 >
-  <Card class={index % 2 === 0 ? "order-first" : "order-last"}>
+  <Card class={index % 2 === 0 ? "order-first" : "md:order-last"}>
     <Image
       src={item.data.image}
       alt={item.data.title}
@@ -17,7 +17,7 @@ const { index, item } = Astro.props;
     />
   </Card>
 
-  <div class="flex flex-col items-start gap-4">
+  <div class="flex flex-col items-start gap-4 md:max-w-md mx-auto">
     <h3 class="text-4xl">{item.data.title}</h3>
     <p class="text-lg">{item.data.text}</p>
   </div>
