@@ -1,5 +1,6 @@
 ---
 import { Image } from "astro:assets";
+import { Icon } from "astro-icon/components";
 
 import Section from "../common/Section.astro";
 
@@ -24,12 +25,21 @@ const { index, item } = Astro.props;
         item.data.features.map((feature, i) => (
           <li
             id="feature-item"
-            class="flex flex-col justify-center p-4 gap-2 rounded bg-gray-100 cursor-pointer transition-all duration-200 hover:bg-gray-300"
+            class:list={[
+              "flex flex-col gap-3 p-4 justify-center",
+              "rounded-lg bg-gray-100 cursor-pointer",
+              "group hover:bg-gray-200 transition-all duration-300 ease-out",
+            ]}
             tabindex="0"
             data-index={i}
+            data-open={true}
           >
-            <h3 class="text-lg md:text-xl font-medium">{feature.id}</h3>
-            <p class="text-sm md:text-base hidden">{feature.text}</p>
+            <div class="flex gap-3">
+              <Icon id="plus" class="w-6 h-6 " name="mdi:add" />
+              <Icon id="minus" class="w-6 h-6 hidden" name="mdi:minus" />
+              <h3 class="text-lg md:text-xl font-medium">{feature.id}</h3>
+            </div>
+            <p class="pl-9 text-sm md:text-base hidden">{feature.text}</p>
           </li>
         ))
       }

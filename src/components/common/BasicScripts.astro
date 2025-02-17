@@ -24,7 +24,12 @@
     document.querySelectorAll("#feature-item").forEach((item) => {
       item.addEventListener("click", () => {
         const text = item.querySelector("p");
+        const plus = item.querySelector("#plus");
+        const minus = item.querySelector("#minus");
+
         text?.classList.toggle("hidden");
+        plus?.classList.toggle("hidden");
+        minus?.classList.toggle("hidden");
       });
     });
   });
