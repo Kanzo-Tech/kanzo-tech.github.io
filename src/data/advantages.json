@@ -3,24 +3,24 @@
         "id": "context",
         "title": "From data to knowledge",
         "text": "Knowledge Graphs structure raw information into interconnected insights, turning scattered data into meaningful, actionable knowledge",
-        "image": "../assets/images/hero.avif"
+        "image": "../assets/images/first.svg"
     },
     {
         "id": "foundations",
         "title": "A Foundation for Ethical AI",
         "text": "As ethical AI becomes a priority, Knowledge Graphs ensure that AI systems operate with logic, context, and truth at their core",
-        "image": "../assets/images/hero.avif"
+        "image": "../assets/images/second.svg"
     },
     {
         "id": "companies",
         "title": "Trusted by Leading Companies",
         "text": "Tech giants like Microsoft, Google, Siemens, LinkedIn, Airbnb, eBay, and Apple leverage Knowledge Graphs to power essential products and services worldwide",
-        "image": "../assets/images/hero.avif"
+        "image": "../assets/images/third.svg"
     },
     {
         "id": "industries",
         "title": "From Complexity to Accessibility",
         "text": "Once limited to large corporations due to complexity and expertise shortages, Knowledge Graph technology is now becoming more accessible across industries",
-        "image": "../assets/images/hero.avif"
+        "image": "../assets/images/fourth.svg"
     }
 ]
